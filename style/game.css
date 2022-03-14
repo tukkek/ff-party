@@ -1,0 +1,21 @@
+.game{
+  display:grid;
+  grid-auto-flow:column;
+  white-space:nowrap;
+  width:min-content;
+}
+.game>div>label,.game>div>div{
+  margin-bottom:1em;
+  display:block;
+  text-align:center;
+  vertical-align:middle;
+}
+.game .hidden{
+  display:none;
+}
+img{
+  width:1em;
+  height:1em;
+  margin-left:1em;
+  vertical-align:sub;
+}

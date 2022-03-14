@@ -1,0 +1,25 @@
+<title>Final Fantasy party generator</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style/game.css">
+
+<p>On the left, click on characters as they become eligible. On the right, characters are listed by party placement priority.</p>
+<template id='game'>
+  <div class='game'>
+    <div class='characters'></div>
+    <div class='party'></div>
+  </div>
+</template>
+<div id='ff7'>
+  <h1>Final fantasy VII</h1>
+  <p>(Materia shown are my personal design for <a href='https://www.materialockdown.com/' target='_blank'>the Materia Lockdown challenge</a>).</p>
+</div>
+<div id='ff9'>
+  <h1>Final fantasy IX</h1>
+</div>
+
+<script type='module'>
+  import * as ff7 from './src/ff7.js'
+  import * as ff9 from './src/ff9.js'
+  ff7.setup()
+  ff9.setup()
+</script>
